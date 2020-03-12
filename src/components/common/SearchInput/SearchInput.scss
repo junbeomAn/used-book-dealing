@@ -1,0 +1,33 @@
+@import 'utils';
+
+.search-input {
+  position: absolute;
+  top: 300px;
+  width: 650px;
+  height: 10vh;
+  
+  // 인풋모양
+  @include material-shadow(3, 1);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 7px 30px 7px 30px;
+  text-align: start;
+  text-rendering: auto;
+  color: $oc-gray-6;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  
+  font: 400 1.4rem Arial;
+
+  &:hover {
+    background: $oc-gray-0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

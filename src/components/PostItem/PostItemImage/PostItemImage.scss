@@ -1,0 +1,15 @@
+@import 'utils';
+
+.post-item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3px solid $oc-gray-3;
+  width: $productImageWidth;
+  height: $productImageHeight;
+
+}
+
+.post-item-image+.post-item-image {
+  margin-left: 15px;
+}

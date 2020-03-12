@@ -1,0 +1,40 @@
+@import 'utils';
+
+.post-body{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-right: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  background-color: $oc-gray-0; 
+  .post-body-title {
+    width: 100px;
+  }
+  .post-body-content {
+    flex: 1;
+    width: 200px;
+    text-align: left;
+  }
+  hr {
+    flex: 1
+  }
+  div {
+    flex: 1;
+  }
+  .post-body-location{
+    display: flex;
+  }
+  .post-body-comment {
+    border-radius: 10px;
+    resize: none;
+  }
+  textarea {
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'utils';
+
+.post-hotlist-btn-wrapper {
+  
+  text-align: center;
+  .post-hotlist-btn {
+    background: transparent;
+    border: transparent;
+    font-size: 2rem;
+    margin-right: 10px;
+    width: 1rem;
+    &:focus{
+      outline: none;
+    }
+    &:hover {
+      color: red;
+    }
+  }
+}

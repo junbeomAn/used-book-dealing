@@ -1,0 +1,115 @@
+@import "utils";
+
+.login-body-wrapper{
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+.auth-title {
+  h1 {
+    position: relative;
+    left: 50%;
+    top: 14%;
+    transform: translate(-50%, -50%);
+  }
+}
+.authInputContainer {
+  // 회원가입
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.loginInputContainer {
+  // 로그인 인풋창
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: relative;
+  left: 52%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.loginOptionContainer {
+  // 비번찾기 및 가입
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  // margin-top: 50px;
+}
+.authConnectLogin {
+  margin-top: 10px;
+}
+.authContainer {
+  height: 600px;
+  width: 70%;
+  z-index: 99;
+  background: $oc-gray-0;
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  @include material-shadow(4, 1);
+}
+
+.authButtonContainer {
+  flex: 1;
+  width: 100%;
+}
+
+.authFormContainer {
+  flex: 1;
+}
+.authInputTitleTag {
+  width: 80px;
+}
+.authBtn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.authSubmitBtn {
+  float: right;
+}
+
+.loginAddText {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  // border: solid 1px darkviolet;
+}
+.authAddInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .authInputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+}
+

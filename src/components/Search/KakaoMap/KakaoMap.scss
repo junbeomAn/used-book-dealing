@@ -1,0 +1,13 @@
+@import 'utils';
+
+.Kakao-map {
+  // border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 480px;
+  border-radius: 10px;
+  // display: none;
+  @include material-shadow(2, 0.5);
+
+}

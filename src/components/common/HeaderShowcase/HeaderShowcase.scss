@@ -1,0 +1,88 @@
+@import 'utils';
+
+.header-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid red;
+  // margin-bottom: 100px; 
+  .showcase {
+    display: flex;
+    justify-content: center;
+    min-height: 1500px;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    top: $baseValueFromTop;
+    
+    img { 
+      border-radius: 20px;
+      // border-top-left-radius: 0;
+      // border-top-right-radius: 0;
+      // position: relative;
+      width: 1050px;
+      opacity: 0.3;
+      @include material-shadow(5, 3);
+    }
+   
+  }
+  input {
+    position: absolute;
+    top: $baseValueFromTop + 280px;
+    margin: 0em;
+    z-index: 99;
+  }
+  .showcase-content {    
+    position: absolute;
+    top: $baseValueFromTop + 120px;
+    user-select: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color:$oc-gray-7;
+    z-index: 99;
+  }
+  .to-home{
+    position: absolute;    
+    z-index: 99;
+    top: $baseValueFromTop + 40px;  
+    left: 15%;
+    // transform: (-7.5%);
+    .title {      
+      font-size: 2rem;
+      user-select: none;
+      color:$oc-gray-7;
+      font-weight: bold;
+    }
+  }
+  
+  .main-menubar {
+    position: absolute;
+    background-color: white;
+    right: 15%;
+    padding: 10px;
+    margin-top: $baseValueFromTop - 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 0 10px $oc-gray-4;
+    .to-loginpage {    
+      user-select: none;
+      color: $oc-gray-7;    
+      padding: 5px;   
+    }
+    .to-signuppage {
+      user-select: none;
+      color: $oc-gray-7;    
+      padding: 5px;
+    }
+    .menu-divider {
+      user-select: none;
+      font-size: 0.8rem;
+      padding: 7.5px;
+    }
+    .to-mypage {
+      user-select: none;
+      color: $oc-gray-7;    
+      padding: 5px;  
+    }
+  }   
+}

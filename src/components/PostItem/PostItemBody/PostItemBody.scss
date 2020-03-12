@@ -1,0 +1,91 @@
+@import 'utils';
+
+.post-item-body-container {
+  display: flex;
+  justify-content: center;
+  .post-item-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 250px;
+    width: 65%;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 100px;
+    border: transparent;
+    @include material-shadow(4, 0.5);
+    input {
+      border: 0.3px solid $oc-gray-3;
+      color: $oc-gray-7;
+      padding: 10px;
+      width: 80%;
+    }  
+    
+    hr {
+      border: transparent;
+    }
+    .post-item-body-selling {
+      font-size: 2rem;
+      color: $oc-gray-6;
+      font-weight: 600;
+      padding: 20px 20px 25px 0px;
+    }
+    .post-item-title {
+      width: 70%;
+      height: 8vh;
+      font-size: 1.5rem;
+      // &:focus{
+      //   outline: none;
+      // }
+    }
+    .post-item-image-wrapper {
+      display: flex;
+      .input-file{
+        position: relative;
+        left: -$productImageWidth;
+        width: $productImageWidth;
+        height: $productImageHeight;
+        opacity: 0;
+      }
+      .blank {
+        width: $productImageWidth;
+        height: $productImageHeight;
+        border: 0.3px solid $oc-gray-3;
+        color: $oc-gray-7;
+        padding: 10px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+      }
+    }
+    .post-item-content {
+      margin-bottom: 30px;
+      resize: none;
+      border: 0.3px solid $oc-gray-3;
+      padding: 20px;
+      width: 100%;
+      height: 60vh;
+      &:focus {
+        outline: none;
+      }
+    }
+    .post-item-body-button {
+      width: 80px;
+      height: 45px;
+      position: relative;
+      left: 620px;
+      font-size: 1.2rem;
+      color: $oc-gray-7;
+      margin-bottom: 70px;
+      // border: transparent;
+      // background-color: 
+    }
+  }
+  
+}

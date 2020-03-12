@@ -1,0 +1,40 @@
+@import 'utils';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: $oc-gray-1;
+  color: $oc-orange-6;
+  border: transparent;
+  transition: all ease-in 0.15s;
+  cursor: pointer;
+  
+  span {
+    user-select: none;
+    font-size: 4rem; 
+    font-weight: 400;   
+  }
+  .text {
+    display: none;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    color: $oc-gray-1;
+    background-color: $oc-orange-6;
+    .text {
+      display: flex;
+    }
+    .symbol {
+      display: none;
+    }   
+  }
+  @include material-shadow(3, 0.5);
+
+}

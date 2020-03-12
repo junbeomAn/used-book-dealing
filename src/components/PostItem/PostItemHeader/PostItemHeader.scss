@@ -1,0 +1,25 @@
+@import 'utils';
+
+.post-item-header {
+  display: flex;
+  
+  width: 85%;
+  margin-left: 7.5%;
+  margin-bottom: 50px;
+  height: 20vh;
+  background: url("http://www.peopleciety.com/wp/wp-content/uploads/2017/08/books-2562331_960_720-%EB%8F%84%EC%84%9C%EA%B4%80-%EC%B1%85.jpg");
+  opacity: 0.6;
+  border-top: 0.5px solid $oc-gray-0;
+  border-bottom: 0.5px solid $oc-gray-0;
+  position: relative;
+  padding: 35px;
+  font-size: 2rem;
+  span {
+    position: relative;
+    top: 10px;
+    color: $oc-lime-0;
+    font-size: 2.7rem;
+    font-weight: bold;
+    user-select: none;
+  }
+}
